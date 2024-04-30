@@ -17,7 +17,7 @@ const Header = () => {
             src={Menu}
             onClick={HandelMenu}/>
             <img className='h-10 px-2'
-            alt='Logo12'
+            alt='Logo'
             src={Logo}/>
         </div>
         <div className='flex'>
