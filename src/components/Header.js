@@ -10,9 +10,9 @@ const Header = () => {
     dispatch(toggelmenu());
  }
   return (
-    <div className='flex justify-between pt-3 px-3 text-center'>
+    <div className='flex justify-between pt-3 px-3 text-center fixed w-full'>
         <div className='flex'>
-            <img className='h-8 text-white bg-black' 
+            <img className='h-8 text-white bg-black cursor-pointer' 
             alt='Menu'
             src={Menu}
             onClick={HandelMenu}/>
@@ -21,9 +21,9 @@ const Header = () => {
             src={Logo}/>
         </div>
         <div className='flex'>
-            <input className='border border-slate-200 h-8 rounded-l-xl w-96 px-2 bg-black'
+            <input className='border border-slate-200 h-8 rounded-xl w-96 px-2 bg-black text-white'
             type='text' placeholder='search'/>
-            <img className='h-8 px-3   rounded-r-xl border border-black  bg-slate-900'
+            <img className='h-8 px-3 -ml-12 cursor-pointer'
             src={Search}
             alt='Search'/>
         </div>

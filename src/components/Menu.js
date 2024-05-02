@@ -1,13 +1,16 @@
 import React from 'react'
 import { useSelector } from 'react-redux'
+import { Link } from 'react-router-dom';
 
 const Menu = () => {
   const isMenu = useSelector(store => store.menu.ismenu);
   if(!isMenu) return
   return (
-    <div className='m-3 w-48 shadow-md p-2 text-white'>
+    <div className='m-3 max-w-60 shadow-md  px-8 text-white mt-12 absolute z-10 bg-black'>
         <ul className='font-semibold leading-5'>
+            <Link to="/">
             <li className='hover:bg-slate-200 rounded-md p-2 '>Home</li>
+            </Link>
             <li className='hover:bg-slate-200 rounded-md p-2 '>Shorts</li>
             <li className='hover:bg-slate-200 rounded-md p-2 '>Subscriptions</li>
         </ul>
